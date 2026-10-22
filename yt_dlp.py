@@ -26,7 +26,7 @@ def download_video():
             }
             with yt_dlp.YoutubeDL(ydl_opts) as ydl:
                 ydl.download([url])
-            status_label.config(text="✅ Download completed!", fg="lightgreen")
+            status_label.config(text="✅ Download successful!", fg="lightgreen")
         except Exception as e:
             status_label.config(text=f"❌ Error: {e}", fg="red")
         finally:
